@@ -27,52 +27,29 @@ public class Offertenvergleich {
             //wenn preis A kleiner B
             //wenn preis B kleiner A
             //wenn preis gleich
+            // wenn A teurer B, B aber längere lieferzeit
 
-        if (lZeitA <=14 || lZeitB <= 14) {
-            if(preisA < preisB && lZeitA<=14){
-                System.out.println("Produkt A bestellen: " + preisA + " CHF, " + lZeitA + "Tage");
-            } else if (preisA > preisB && lZeitA<=14 && lZeitB > 14){
-                System.out.println("Produkt A bestellen: " + preisA + " CHF, " + lZeitA + "Tage");
-            } else if (preisA == preisB && lZeitA<=14 && lZeitB <= 14){
+        checkAlgorythm(lZeitA, lZeitB, preisA, preisB);
+
+    }
+
+    public static void checkAlgorythm(int time1, int time2, double val1, double val2) {
+        if(time1 <= 14 && time2 <=14){
+            if(val1 == val2){
                 System.out.println("Kein Unterscheid besteht");
-            } else if (preisA > preisB && lZeitA<=14 && lZeitB <= 14){
-
+            } else if(val1<val2){
+                System.out.println("Produkt A bestellen: " + val1 + " CHF, " + time1  + "Tage");
+            } else if(val2<val1) {
+                System.out.println("Produkt A bestellen: " + val2+ " CHF, " + time2 + "Tage");
+            } else {
+                System.out.println("Kein Produkt erwerben");
+            }
+        } else if(time1 <= 14){
+            System.out.println("Produkt A bestellen: " + val1 + " CHF, " + time1  + "Tage");
+        } else if (time2 <= 14){
+            System.out.println("Produkt A bestellen: " + val2+ " CHF, " + time2 + "Tage");
         } else {
             System.out.println("Kein Produkt erwerben");
         }
-
-        /**
-            if (lZeitA <=14 && lZeitB>14){
-                System.out.println("Produkt A bestellen: " + preisA + " CHF, " + lZeitA + "Tage");
-            } else if (lZeitB <=14 && lZeitA>14) {
-                System.out.println("Produkt B bestellen: " + preisB + " CHF, " + lZeitB + "Tage");
-            } else if (lZeitA < lZeitB && preisA < preisB) {
-                System.out.println("Produkt A bestellen: " + preisA + " CHF, " + lZeitA + "Tage");
-            } else if (lZeitA > lZeitB && preisA > preisB) {
-                System.out.println("Produkt B bestellen: " + preisB + " CHF, " + lZeitB + "Tage");
-            }
-
-
-
-            else if (lZeitA<=14 && preisA<preisB){
-                System.out.println("Produkt A bestellen: " + preisA + " CHF, " + lZeitA + "Tage");
-            } else if(lZeitB <=14 && preisB<preisA) {
-                System.out.println("Produkt B bestellen: " + preisB + " CHF, " + lZeitB + "Tage");
-            } else if(lZeitB <=14 && preisB>preisA) {
-                System.out.println("Produkt B bestellen: " + preisB + " CHF, " + lZeitB + "Tage");
-            } else if(lZeitB <=14 && preisB<preisA) {
-                System.out.println("Produkt B bestellen: " + preisB + " CHF, " + lZeitB + "Tage");
-            } else if(lZeitB <=14 && preisB==preisA) {
-                System.out.println("Produkt B bestellen: " + preisB + " CHF, " + lZeitB + "Tage");
-            } else if(lZeitA <=14 && preisB==preisA) {
-                System.out.println("Produkt A bestellen: " + preisA + " CHF, " + lZeitA + "Tage");
-            } else if(lZeitB <=14 && preisB<preisA) {
-                System.out.println("Produkt B bestellen: " + preisB + " CHF, " + lZeitB + "Tage");
-            } else{
-                System.out.println("Kein Unterscheid besteht");
-            }
-        }else {
-            */
-
     }
 }
