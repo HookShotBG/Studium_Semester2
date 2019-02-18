@@ -28,17 +28,20 @@ public class Offertenvergleich {
         System.out.println("A: " + preisA + " CHF, " + lZeitA + " Tage");
         System.out.println("B: " + preisB + " CHF, " + lZeitB + " Tage");
 
-
-        //wenn zeit kleiner 2 wochen A&B
-            //wenn preis A kleiner B
-            //wenn preis B kleiner A
-            //wenn preis gleich
-            // wenn A teurer B, B aber längere lieferzeit
-
         checkAlgorythm(lZeitA, lZeitB, preisA, preisB);
 
     }
 
+    /**
+     * Methode welche auswertet, welches Produkt gekauft werden soll
+     *
+     * Logik -> funktioniert so, dass die lieferzeit und der preis verglichen werden -> <=14 wochen -> dann preis
+     *
+     * @param time1 : lieferZeit des ersten Lieferanten
+     * @param time2 : lieferZeit des zweiten Lieferanten
+     * @param val1 : preis des ersten Lieferanten
+     * @param val2 : preis des zweiten Lieferanten
+     */
     public static void checkAlgorythm(int time1, int time2, double val1, double val2) {
         if(time1 <= 14 && time2 <=14){
             if(val1 == val2){
