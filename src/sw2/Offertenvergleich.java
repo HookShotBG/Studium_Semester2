@@ -41,9 +41,7 @@ public class Offertenvergleich {
                 System.out.println("Produkt A bestellen: " + val1 + " CHF, " + time1  + "Tage");
             } else if(val2<val1) {
                 System.out.println("Produkt A bestellen: " + val2+ " CHF, " + time2 + "Tage");
-            } else {
-                System.out.println("Kein Produkt erwerben");
-            }
+            } else System.out.println("Kein Produkt erwerben");
         } else if(time1 <= 14){
             System.out.println("Produkt A bestellen: " + val1 + " CHF, " + time1  + "Tage");
         } else if (time2 <= 14){
