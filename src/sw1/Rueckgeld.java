@@ -14,8 +14,7 @@ public class Rueckgeld {
 
     public int erhaltenerBetrag(){
         Scanner betrag = new Scanner(System.in);
-        betrag.
-        return
+        return 1;
     }
 
     public void print() {
