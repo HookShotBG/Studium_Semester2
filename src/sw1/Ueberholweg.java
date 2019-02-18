@@ -1,3 +1,9 @@
+/**
+ * Author: Daniel Lutziger
+ * Class: WIN TZ HS 18b
+ * Date: 18.02.2019
+ */
+
 package sw1;
 
 public class Ueberholweg {
