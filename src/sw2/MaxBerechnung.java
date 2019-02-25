@@ -1,3 +1,9 @@
+/**
+ * Author: Daniel Lutziger
+ * Class: WIN TZ HS 18b
+ * Date: 18.02.2019
+ */
+
 package sw2;
 
 import java.util.Arrays;
@@ -15,5 +21,7 @@ public class MaxBerechnung {
         Arrays.sort(inputs);
 
         System.out.println("Die grösste eingegebene Zahl ist "+ inputs[inputs.length-1]);
+
+        Offertenvergleich of = new Offertenvergleich(2);
     }
 }

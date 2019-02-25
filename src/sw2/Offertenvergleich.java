@@ -9,6 +9,14 @@ package sw2;
 import java.util.Scanner;
 
 public class Offertenvergleich {
+
+
+    public Offertenvergleich(int zahl){
+        System.out.println(zahl);
+    }
+
+
+
     public static void main(String[] args) {
         double preisA; // Preis Lieferant A
         double preisB; // Preis Lieferant B
