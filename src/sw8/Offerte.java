@@ -1,4 +1,4 @@
-package sw7;
+package sw8;
 
 public class Offerte {
     private Kunde kunde;
