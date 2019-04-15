@@ -30,16 +30,3 @@ public class Offertenmanager {
     }
 
 }
-
-/**
- * du hesch im offertenmanager ja die foreach wo du setzisch, mit dere chasch jedi offerte nummere usgeh
- * denn nachher holsch du aber jedi einzeli offerte und machsch de print druf.. sit dem ja jedi offerte e printfunktion het
- * und i dere print funktion vo de offerte wird ja scho de kundeprint usgführt
- *
- * eig so bildlich
- * printAllOfferten -> holt einzelne Offerte
- * einzelne Offerte -> offerte print
- * offerte print -> beinhaltet kunde print
- * kunde print -> gibt kunden aus
- *
- */
